@@ -129,7 +129,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # Title
-st.title("Document Q&A with FAISS Search")
+st.title("FAISS Search created Mehedi Hasan Monna")
 st.markdown("Search your documents using pre-built FAISS index!")
 
 # Sidebar for settings
@@ -453,4 +453,5 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Display message count in sidebar
+
 st.sidebar.metric("Chat Messages", len([m for m in st.session_state.messages if m["role"] == "user"]))
